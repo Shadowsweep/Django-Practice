@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Example</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin-top: 50px;
+        }
+        #box {
+            width: 200px;
+            height: 100px;
+            background-color: lightgray;
+            line-height: 100px;
+            margin: auto;
+            font-size: 20px;
+            font-weight: bold;
+            border-radius: 10px;
+        }
+        button {
+            margin-top: 20px;
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+            border: none;
+            background-color: blue;
+            color: white;
+            border-radius: 5px;
+        }
+        button:hover {
+            background-color: darkblue;
+        }
+    </style>
+</head>
+<body>
+
+    <div id="box">Hello!</div>
+    <button onclick="changeText()">Click Me</button>
+
+    <script>
+        function changeText() {
+            let box = document.getElementById("box");
+            box.innerHTML = "JavaScript Works!";
+            box.style.backgroundColor = "lightgreen";
+            box.style.color = "black";
+        }
+    </script>
+
+</body>
+</html>
