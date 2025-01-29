@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Digital Clock</title>
+    <style>
+        body {
+            text-align: center;
+            font-family: Arial, sans-serif;
+            background-color: black;
+            color: white;
+            padding: 50px;
+        }
+        #clock {
+            font-size: 50px;
+            font-weight: bold;
+            padding: 20px;
+        }
+    </style>
+</head>
+<body>
+
+    <h2>Live Digital Clock</h2>
+    <div id="clock">00:00:00</div>
+
+    <script>
+        function updateClock() {
+            let now = new Date();
+            let time = now.toLocaleTimeString();
+            document.getElementById("clock").innerHTML = time;
+        }
+        setInterval(updateClock, 1000);
+        updateClock(); // Call function immediately
+    </script>
+
+</body>
+</html>
