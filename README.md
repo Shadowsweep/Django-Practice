@@ -12,7 +12,7 @@ A simple To-Do List application built with Django, allowing users to add and del
 
 ### 1. Clone the Repository
 ```sh
-git clone https://github.com/yourusername/django-todo-list.git
+git clone https://github.com/Shadowsweep/Django_todo_list.git
 cd django-todo-list
 ```
 
